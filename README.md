@@ -3,7 +3,7 @@
 
 Digithela is a cross-platform mobile application built using **Flutter** and **Firebase** that empowers street food vendors by giving them a digital presence and helps customers discover and coordinate with them in real time. Designed with simplicity, inclusivity, and local culture in mind, Digithela bridges the gap between informal vendors and tech-savvy customers.
 
----
+
 
 ## 🚀 Features
 
@@ -41,3 +41,27 @@ Digithela is a cross-platform mobile application built using **Flutter** and **F
 ---
 
 ## 📂 Project Structure
+lib/
+│
+├── main.dart                        # Entry point of the application
+│
+├── screens/
+│   ├── splash_screen.dart            # Initial splash screen
+│   ├── role_selection_screen.dart    # Lets user choose vendor or customer
+│   ├── login_screen.dart             # Handles login for both roles
+│   ├── signup_screen.dart            # Handles signup for both roles
+│   │
+│   ├── vendors/                      # Vendor module
+│   │   ├── vendor_dashboard.dart
+│   │   ├── menu_management_screen.dart
+│   │   ├── add_business_screen.dart
+│   │   └── business_profile_screen.dart
+│   │
+│   └── customer/                     # Customer module
+│       ├── customer_dashboard.dart
+│       ├── vendor_detail_screen.dart
+│       ├── cart_screen.dart
+│       └── order_success_screen.dart
+│
+└── firebase_options.dart             # Firebase configuration (auto-generated)
+
